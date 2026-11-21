@@ -42,3 +42,14 @@ After the rule:
 
 ## Limitation
 Guests can still reach their own gateway and anything not blocked. A real design would also restrict Guests to internet access only.
+## Evidence
+Screenshots are in this repository. The full lab is in segmentation-lab.pkt, which opens in Cisco Packet Tracer.
+
+| File | What it shows |
+|---|---|
+| [IMG-20261121-WA0102.jpg](IMG-20261121-WA0102.jpg) | Before the rule: Guests reach Servers, 4 of 4 replies |
+| [IMG-20261121-WA0103.jpg](IMG-20261121-WA0103.jpg) | Guests to Servers, before and after the rule (blocked) |
+| [IMG-20261121-WA0104.jpg](IMG-20261121-WA0104.jpg) | Guests to Staff, before and after the Staff deny line |
+| [IMG-20261121-WA0105.jpg](IMG-20261121-WA0105.jpg) | Staff to Servers still works |
+| [IMG-20261121-WA0106.jpg](IMG-20261121-WA0106.jpg) | Guests to Staff blocked, Guests to their own gateway works |
+| [IMG-20261121-WA0101.jpg](IMG-20261121-WA0101.jpg) | Final access list on the router, after fixing the line order |
